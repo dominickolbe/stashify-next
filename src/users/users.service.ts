@@ -4,7 +4,6 @@ import { UpdateUserDto } from "./dto/update-user.dto";
 import { InjectRepository } from "@nestjs/typeorm";
 import { User } from "./entities/user.entity";
 import { Repository } from "typeorm";
-import { v4 as uuid } from "uuid";
 
 @Injectable()
 export class UsersService {
@@ -16,7 +15,6 @@ export class UsersService {
     const newUser = this.usersRepository.create(createUserDto);
     return this.usersRepository.save({
       ...newUser,
-      id: uuid(),
     });
   }
 
