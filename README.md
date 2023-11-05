@@ -10,6 +10,33 @@
 
 ---
 
+## PostgreSQL Database Setup with Docker Compose
+
+This project sets up a PostgreSQL database using Docker Compose.
+
+## Prerequisites
+
+- Docker
+- Docker Compose
+
+## Setup
+
+Create a `.env` (based on `.env.example`) file in the project root directory with the following variables:
+
+Run the following command to start the PostgreSQL database
+
+```bash
+docker compose up -d
+```
+
+This command will start a PostgreSQL server on the port specified in the .env file. The POSTGRES_USER, POSTGRES_PASSWORD, and POSTGRES_DB environment variables set the default credentials and database, which you can use to connect to the database.
+
+The data stored in the database persists across container restarts thanks to the Docker volume named postgres_data.
+
+### Connecting to the Database
+
+You can connect to the database using the credentials and port number specified in the .env file. The host is localhost if you're running the Docker container on your local machine.
+
 ## Docker
 
 Build the image
