@@ -1,12 +1,16 @@
 version: "3.8"
+
 services:
   db:
-    image: postgres:13
+    container_name: stashify-postgres
+    image: postgres
     restart: unless-stopped
-    env_file:
-      - .env
+    environment:
+      - POSTGRES_DB=${DATABASE_NAME}
+      - POSTGRES_USER=${DATABASE_USER}
+      - POSTGRES_PASSWORD=${DATABASE_PASS}
     ports:
-      - "${POSTGRES_PORT}:5432"
+      - "${DATABASE_PORT}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data/
 

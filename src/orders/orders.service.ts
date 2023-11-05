@@ -18,6 +18,7 @@ export class OrdersService {
 
   async update(id: string, updateOrderDto: UpdateOrderDto) {
     await this.ordersRepository.update(id, updateOrderDto);
-    return this.ordersRepository.findOne(id);
+    // return this.ordersRepository.findOne(id);
+    return "This action adds a new item";
   }
 }

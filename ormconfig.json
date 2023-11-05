@@ -1,0 +1,13 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "stashify",
+  "password": "stashify",
+  "database": "stashify",
+  "entities": ["src/**/*.entity.ts"],
+  "migrations": ["src/migration/**/*.ts"],
+  "cli": {
+    "migrationsDir": "src/migration"
+  }
+}
