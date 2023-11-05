@@ -51,6 +51,18 @@ Run the container
 docker run --name stashify_next -p 8080:3000 stashify-next
 ```
 
+## Scripts
+
+```bash
+chmod +x scripts/*.sh
+```
+
+Generate `.env` file based on `.env.example`
+
+```bash
+scripts/create-env.sh
+```
+
 ---
 
 ## LICENSE
