@@ -28,4 +28,4 @@ docker run --name stashify_next -p 8080:3000 stashify-next
 
 ## LICENSE
 
-Copyright © 2023 [Dominic Kolbe](https://dominickolbe.dk) :de:
+Copyright © 2024 [Dominic Kolbe](https://dominickolbe.dk) :de:
