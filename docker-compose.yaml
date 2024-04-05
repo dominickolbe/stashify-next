@@ -13,6 +13,11 @@ services:
       - "${DATABASE_PORT}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data/
+    networks:
+      - default
 
 volumes:
   postgres_data:
+
+networks:
+  default:

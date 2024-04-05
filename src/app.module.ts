@@ -7,7 +7,7 @@ import { AppService } from "./app.service";
 import { DatabaseModule } from "./database/database.module";
 import { ItemsModule } from "./items/items.module";
 import { OrdersModule } from "./orders/orders.module";
-import { TasksService } from "./task/task.service";
+import { TaskService } from "./task/task.service";
 import { UsersModule } from "./users/users.module";
 
 @Module({
@@ -22,7 +22,7 @@ import { UsersModule } from "./users/users.module";
     UsersModule,
   ],
   controllers: [AppController],
-  providers: [AppService, TasksService],
+  providers: [AppService, TaskService],
 })
 export class AppModule {
   constructor(private dataSource: DataSource) {}

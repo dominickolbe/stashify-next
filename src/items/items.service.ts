@@ -4,6 +4,7 @@ import { UpdateItemDto } from "./dto/update-item.dto";
 
 @Injectable()
 export class ItemsService {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   create(createItemDto: CreateItemDto) {
     return "This action adds a new item";
   }
@@ -16,6 +17,7 @@ export class ItemsService {
     return `This action returns a #${id} item`;
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   update(id: number, updateItemDto: UpdateItemDto) {
     return `This action updates a #${id} item`;
   }
