@@ -67,4 +67,4 @@ scripts/create-env.sh
 
 ## LICENSE
 
-Copyright © 2023 [Dominic Kolbe](https://dominickolbe.dk) :de:
+Copyright © 2024 [Dominic Kolbe](https://dominickolbe.dk) :de:
