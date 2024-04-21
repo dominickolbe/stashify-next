@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/dominickolbe/stashify-next/compare/v0.0.2...v0.0.3) (2024-04-21)
+
+
+### Features
+
+* add api docs ([b5d0eee](https://github.com/dominickolbe/stashify-next/commit/b5d0eeeca216992e3a09f3fd822d6347719f123f))
+* add script to generate .env file ([f26c743](https://github.com/dominickolbe/stashify-next/commit/f26c74398f441ecd24c2809787fef14ea6309344))
+
 ### 0.0.2 (2024-01-06)
 
 
